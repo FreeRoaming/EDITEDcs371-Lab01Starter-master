@@ -27,17 +27,43 @@ public class PrimeTester {
         }
         else
         {
-            for(int i = 2; i<10; i++)
-            {
-                if(n%i == 0)
+                if(n%2 == 0)
                 {
                     returning =  false;
+                }
+                else if (n%3 == 0 & n != 3)
+                {
+                    returning = false;
+                }
+                else if (n%4 == 0 & n != 4)
+                {
+                    returning = false;
+                }
+                else if (n%5 == 0 & n != 5)
+                {
+                    returning = false;
+                }
+                else if (n%6 == 0 & n != 6)
+                {
+                    returning = false;
+                }
+                else if (n%7 == 0 & n != 7)
+                {
+                    returning = false;
+                }
+                else if (n%8 == 0 & n != 8)
+                {
+                    returning = false;
+                }
+                else if (n%9 == 0 & n != 9)
+                {
+                    returning = false;
                 }
                 else
                 {
                     returning =  true;
                 }
-            }
+
         }
         return returning;
     }
