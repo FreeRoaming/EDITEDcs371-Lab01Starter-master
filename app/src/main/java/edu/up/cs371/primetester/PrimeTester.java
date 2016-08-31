@@ -26,9 +26,9 @@ public class PrimeTester {
         }
         else
         {
-            for (int i = 3; i++; i<10)
+            for(int i = 3; i<10; i++)
             {
-                if (n/i%0)
+                if(n%i == 0)
                 {
                     return false;
                 }
