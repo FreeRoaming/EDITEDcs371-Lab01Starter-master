@@ -15,14 +15,15 @@ public class PrimeTester {
      */
     public static boolean isPrime(long n)
     {
+        boolean returning = false;
         // for now, return a random result
         if (n == 0 | n == 1)
         {
-            return false;
+            returning =  false;
         }
         else if (n == 2)
         {
-            return true;
+            returning =  true;
         }
         else
         {
@@ -30,14 +31,14 @@ public class PrimeTester {
             {
                 if(n%i == 0)
                 {
-                    return false;
+                    returning =  false;
                 }
                 else
                 {
-                    return true;
+                    returning =  true;
                 }
             }
         }
-
+        return returning;
     }
 }
